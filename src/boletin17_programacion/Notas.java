@@ -63,12 +63,15 @@ public class Notas {
     
     public void notaMasAlta(){
         
+        int notaM = notas[0];
+        
         for(int i=0; i<notas.length; i++){
             
-            
-          
-            
+            if(notas[i]>notaM){
+            notaM = notas[i];
+        }
             
         }
+        System.out.println("La nota más Alta es " + notaM);
     }
 }
