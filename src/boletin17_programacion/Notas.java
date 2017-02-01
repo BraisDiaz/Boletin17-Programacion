@@ -100,6 +100,25 @@ public class Notas {
         
     }
     
+    public void visualizarAlumno(){
+        
+        String auxNome = JOptionPane.showInputDialog("Introducir nome a buscar");
+        boolean atopado = false;
+        
+        for (int i=0; i<notas.length; i++){
+            
+            if(auxNome.equals(nomes[i])){
+                System.out.println("A nota do alumno : " + nomes[i] + " é " + notas[i]);
+                atopado = true;
+            }  
+                    
+        
+    }
+            if(atopado==false){
+                System.out.println("O alumno introducido non está na lista");
+                
+            }
  
+}
 }
 
