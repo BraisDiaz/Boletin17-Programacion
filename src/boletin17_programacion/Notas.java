@@ -120,5 +120,19 @@ public class Notas {
             }
  
 }
+    
+    public void ordenarNotasCrecente(){
+        
+        for(int i=0;i<(notas.length-1);i++){
+            for(int j=i+1;j<notas.length;j++){
+                
+		if(notas[i]>notas[j]){
+					
+		int variableauxiliar=notas[i];
+	        notas[i]=notas[j];
+	        notas[j]=variableauxiliar;
+            }
+        }
+        }
+    }
 }
-

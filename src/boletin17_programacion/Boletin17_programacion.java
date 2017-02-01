@@ -15,6 +15,7 @@ public class Boletin17_programacion {
         
         Notas obx2 = new Notas();
         obx2.cargarArray();
+        obx2.ordenarNotasCrecente();
         obx2.visualizarValoracion();
         obx2.notaMediaClase();
         obx2.notaMasAlta();
