@@ -1,6 +1,7 @@
 
 package boletin17_programacion;
 
+
 import javax.swing.JOptionPane;
 
 /**
@@ -10,15 +11,7 @@ import javax.swing.JOptionPane;
 public class Notas {
     
     int notas [] = new int[4];
-    
-    public void cargarArray(){
-        
-        for(int i=0; i<notas.length; i++){
-         
-            notas[i] = pedirNota();
-        }
-        
-    }
+    String nomes [] = new String[4];
     
     public int pedirNota(){
         int resultado;
@@ -28,6 +21,23 @@ public class Notas {
           resultado = Integer.parseInt(JOptionPane.showInputDialog("Introduzca o resultado"));
         }while(resultado<1||resultado>10);
         return resultado;
+        
+    }
+    
+    public String pedirNome(){
+        
+        String nome = JOptionPane.showInputDialog("Introducir nome do alumno");
+        return nome;
+        
+    }
+    
+    public void cargarArray(){
+        
+        for(int i=0; i<notas.length; i++){
+         
+            notas[i] = pedirNota();
+            nomes[i] = pedirNome();
+        }
         
     }
     
@@ -74,4 +84,22 @@ public class Notas {
         }
         System.out.println("La nota más Alta es " + notaM);
     }
+    
+    public void alumnosAprobados(){
+        
+        for (int i=0; i<notas.length; i++){
+            
+            if(notas[i]>=5){
+                
+                System.out.println("O alumno " + nomes[i] + " con nota " + notas[i] + " está aprobado");
+            }
+            else
+                System.out.println("O alumno " + nomes[i] + " con nota " + notas[i] + " está suspenso");
+            
+        }
+        
+    }
+    
+ 
 }
+

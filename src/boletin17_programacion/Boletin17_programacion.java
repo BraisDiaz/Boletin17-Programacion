@@ -18,6 +18,7 @@ public class Boletin17_programacion {
         obx2.visualizarValoracion();
         obx2.notaMediaClase();
         obx2.notaMasAlta();
+        obx2.alumnosAprobados();
     }
     
 }
