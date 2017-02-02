@@ -121,7 +121,7 @@ public class Notas {
  
 }
     
-    public void ordenarNotasCrecente(){
+   /* public void ordenarNotasCrecente(){
         
         for(int i=0;i<(notas.length-1);i++){
             for(int j=i+1;j<notas.length;j++){
@@ -133,6 +133,5 @@ public class Notas {
 	        notas[j]=variableauxiliar;
             }
         }
-        }
+        }*/
     }
-}

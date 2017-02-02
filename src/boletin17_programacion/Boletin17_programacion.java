@@ -13,14 +13,17 @@ public class Boletin17_programacion {
         obx1.cargarArray();
         obx1.visualizarAlReves();*/
         
-        Notas obx2 = new Notas();
+        /*Notas obx2 = new Notas();
         obx2.cargarArray();
-        obx2.ordenarNotasCrecente();
+       // obx2.ordenarNotasCrecente();
         obx2.visualizarValoracion();
         obx2.notaMediaClase();
         obx2.notaMasAlta();
         obx2.alumnosAprobados();
         obx2.visualizarAlumno();
+        */
+        Dni obx3 = new Dni();
+        obx3.calcularLetraDni();
     }
     
 }
